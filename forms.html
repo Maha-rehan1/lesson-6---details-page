@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Personal Detail Form</h1>
+    <form oninput="average.value=(parseInt(marks1.value)+parseInt(marks2.value)+parseInt(marks3.value))/3">
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label>Enter your name</label><br>
+            <input type="text"><br><br>
+            <label>Password</label><br>
+            <input type="password"><br><br>
+            <label>Email id</label><br>
+            <input type="email"><br><br>
+            <label>Enter you age</label><br>
+            <input type="number"><br><br>
+
+            <label>choose your gender</label><br>
+            <input type="radio" id="female" value="female" name="gender">FEMALE<br>
+            <input type="radio" id="male" value="male" name="gender">MALE<br><br>
+            <label>Enter your birth date</label><br>
+            <input type="date"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label>Select your favourite color</label><br>
+            <input type="color"><br><br>
+            <label>select your hobbies</label><br><br>
+            <input type="checkbox" id="swimming" value="swimming" name="swimming">swimming<br><br>
+            <input type="checkbox" id="reading" value="reading" name="reading">reading<br><br>
+            <input type="checkbox" id="dancing" value="dancing" name="dancing">dancing<br><br>
+            <input type="checkbox" id="music" value="music" name="music">music<br><br><br>
+            <label>Select your country</label><br>
+            <select id="country">
+                <option value="Pak">Pakistan</option>
+                <option value="United Kingdom">UK</option>
+            </select><br><br>
+        </fieldset>
+        <fieldset>
+            <label>Enter the marks of mathematics</label><br>
+            <input type="number" id="marks1" name="mathematics"><br><br>
+            <label>Enter the marks of Physics</label><br>
+            <input type="number" id="marks2" name="Physics"><br><br>
+            <label>Enter the marks of Geo</label><br>
+            <input type="number" id="marks3" name="Geo"><br><br>
+            <label><output id="average" for="marks1 marks2 marks3"></output></label>
+        </fieldset>
+        <input type="submit" value="done">
+    </form>
+</body>
+
+</html>
